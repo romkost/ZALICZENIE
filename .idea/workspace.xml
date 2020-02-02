@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="406a87b0-b50b-46c9-83d2-e268085beace" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZALICZENIE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cucumber/Features/zad1.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Cucumber/Features/zad2.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ZADANIE1/ZAD1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ZADANIE2/ZAD2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XFvMbYBMOgPmsVkGWheiIJkGmv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/ZADANIE1" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Cucumber" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ZAD1Test">
+    <configuration name="ZAD1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZALICZENIE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ZADANIE1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ZADANIE1" />
+      <option name="MAIN_CLASS_NAME" value="ZADANIE1.ZAD1Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZAD1test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZALICZENIE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ZADANIE2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ZADANIE1" />
+      <option name="MAIN_CLASS_NAME" value="ZADANIE1.ZAD1test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ZAD1Test" />
+        <item itemvalue="JUnit.ZAD1test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="406a87b0-b50b-46c9-83d2-e268085beace" name="Default Changelist" comment="" />
+      <created>1580654609935</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580654609935</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1060" y="221" width="800" height="684" key="#Project_Structure" timestamp="1580655146271">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="1060" y="221" width="800" height="684" key="#Project_Structure/70.27.1850.957@70.27.1850.957" timestamp="1580655146271" />
+    <state x="541" y="173" width="898" height="672" key="#ZAD1test" timestamp="1580662710734">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="541" y="173" width="898" height="672" key="#ZAD1test/70.27.1850.957@70.27.1850.957" timestamp="1580662710734" />
+    <state x="453" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580661532419">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="453" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.957@70.27.1850.957" timestamp="1580661532419" />
+    <state x="609" y="433" width="772" height="152" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580656205300">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="609" y="433" width="772" height="152" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/70.27.1850.957@70.27.1850.957" timestamp="1580656205300" />
+    <state x="601" y="102" width="777" height="814" key="CommitChangelistDialog2" timestamp="1580682610835">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="601" y="102" width="777" height="814" key="CommitChangelistDialog2/70.27.1850.957@70.27.1850.957" timestamp="1580682610835" />
+    <state x="1090" y="184" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580659023879">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="1090" y="184" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.957@70.27.1850.957" timestamp="1580659023879" />
+    <state width="1804" height="314" key="GridCell.Tab.0.bottom" timestamp="1580682610960">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state width="1804" height="314" key="GridCell.Tab.0.bottom/70.27.1850.957@70.27.1850.957" timestamp="1580682610960" />
+    <state width="1804" height="314" key="GridCell.Tab.0.center" timestamp="1580682610957">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state width="1804" height="314" key="GridCell.Tab.0.center/70.27.1850.957@70.27.1850.957" timestamp="1580682610957" />
+    <state width="1804" height="314" key="GridCell.Tab.0.left" timestamp="1580682610956">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state width="1804" height="314" key="GridCell.Tab.0.left/70.27.1850.957@70.27.1850.957" timestamp="1580682610956" />
+    <state width="1804" height="314" key="GridCell.Tab.0.right" timestamp="1580682610958">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state width="1804" height="314" key="GridCell.Tab.0.right/70.27.1850.957@70.27.1850.957" timestamp="1580682610958" />
+    <state x="657" y="88" width="1024" height="852" key="SettingsEditor" timestamp="1580662377091">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="657" y="88" width="1024" height="852" key="SettingsEditor/70.27.1850.957@70.27.1850.957" timestamp="1580662377091" />
+    <state x="651" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1580676426628">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="651" y="333" key="com.intellij.ide.util.TipDialog/70.27.1850.957@70.27.1850.957" timestamp="1580676426628" />
+    <state x="763" y="425" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580682558049">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="763" y="425" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/70.27.1850.957@70.27.1850.957" timestamp="1580682558049" />
+    <state x="517" y="450" width="495" height="158" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1580660783482">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="517" y="450" width="495" height="158" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/70.27.1850.957@70.27.1850.957" timestamp="1580660783482" />
+  </component>
+</project>
