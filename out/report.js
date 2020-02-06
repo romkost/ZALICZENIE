@@ -74,8 +74,18 @@ formatter.step({
   "name": "klient przechodzi do konta",
   "keyword": "And "
 });
+formatter.step({
+  "line": 15,
+  "name": "klient przechodzi do historii zamowien",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "klient przechodzi do szczegolow zamowienia \"\u003cmsg2\u003e\"",
+  "keyword": "Then "
+});
 formatter.examples({
-  "line": 17,
+  "line": 20,
   "name": "",
   "description": "",
   "id": "zakupy2;;",
@@ -88,9 +98,10 @@ formatter.examples({
         "produkt",
         "rozmiar",
         "sztuk",
-        "msg"
+        "msg",
+        "msg2"
       ],
-      "line": 18,
+      "line": 21,
       "id": "zakupy2;;;1"
     },
     {
@@ -101,16 +112,17 @@ formatter.examples({
         "Hummingbird printed sweater",
         "M",
         "5",
-        "YOUR ORDER IS CONFIRMED"
+        "YOUR ORDER IS CONFIRMED",
+        "Awaiting check payment"
       ],
-      "line": 19,
+      "line": 22,
       "id": "zakupy2;;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 22,
   "name": "",
   "description": "",
   "id": "zakupy2;;;2",
@@ -194,6 +206,19 @@ formatter.step({
   "name": "klient przechodzi do konta",
   "keyword": "And "
 });
+formatter.step({
+  "line": 15,
+  "name": "klient przechodzi do historii zamowien",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "klient przechodzi do szczegolow zamowienia \"Awaiting check payment\"",
+  "matchedColumns": [
+    7
+  ],
+  "keyword": "Then "
+});
 formatter.match({
   "arguments": [
     {
@@ -204,7 +229,7 @@ formatter.match({
   "location": "ZAD2Steps.klientOtwieraStroneSklepu(String)"
 });
 formatter.result({
-  "duration": 11198236092,
+  "duration": 15685234507,
   "status": "passed"
 });
 formatter.match({
@@ -221,7 +246,7 @@ formatter.match({
   "location": "ZAD2Steps.klientLogujeSieDoSklepuPodajacI(String,String)"
 });
 formatter.result({
-  "duration": 3516802761,
+  "duration": 4021700415,
   "status": "passed"
 });
 formatter.match({
@@ -234,14 +259,14 @@ formatter.match({
   "location": "ZAD2Steps.klientWyszukaProdukt(String)"
 });
 formatter.result({
-  "duration": 1233662433,
+  "duration": 1473656366,
   "status": "passed"
 });
 formatter.match({
   "location": "ZAD2Steps.klientWybierzeWyszukanyProdukt()"
 });
 formatter.result({
-  "duration": 2034678608,
+  "duration": 2466889324,
   "status": "passed"
 });
 formatter.match({
@@ -258,41 +283,43 @@ formatter.match({
   "location": "ZAD2Steps.klientWybierzeRozmiarIIlosc(String,String)"
 });
 formatter.result({
-  "duration": 2222925664,
+  "duration": 2241542207,
   "status": "passed"
 });
 formatter.match({
   "location": "ZAD2Steps.klientDodaProduktDoKoszyka()"
 });
 formatter.result({
-  "duration": 1300947257,
+  "duration": 1329676296,
   "status": "passed"
 });
 formatter.match({
   "location": "ZAD2Steps.klientKlikaW_PROCEED_TO_CHECKOUT()"
 });
 formatter.result({
-  "duration": 2692354720,
-  "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class\u003d\u0027btn btn-primary\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027roman-virtual-machine\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.3.0-29-generic\u0027, java.version: \u002713.0.2\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200117190643, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7404, moz:profile: /tmp/rust_mozprofileuRbrWf, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.3.0-29-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c9b896e7-7c4e-44cb-aa6a-f03bf0949a07\n*** Element info: {Using\u003dxpath, value\u003d//*[@class\u003d\u0027btn btn-primary\u0027]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat ZADANIE2.ZAD2Steps.klientKlikaW_PROCEED_TO_CHECKOUT(ZAD2Steps.java:108)\n\tat ✽.And klient klika w PROCEED TO CHECKOUT(src/Cucumber/Features/zad2.feature:9)\n",
-  "status": "failed"
+  "duration": 3873896042,
+  "status": "passed"
 });
 formatter.match({
   "location": "ZAD2Steps.klientWybierzeIPotwierdziAdres()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3509179294,
+  "status": "passed"
 });
 formatter.match({
   "location": "ZAD2Steps.klientWybierzeMetodeOdbioru()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3196143143,
+  "status": "passed"
 });
 formatter.match({
   "location": "ZAD2Steps.klientWybierzeOpcjePlatnosci()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4779684018,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -304,12 +331,34 @@ formatter.match({
   "location": "ZAD2Steps.klientWykonaZrzutPotwierdzeniaZamowienia(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7422997795,
+  "status": "passed"
 });
 formatter.match({
   "location": "ZAD2Steps.klientPrzechodziDoKonta()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4047045455,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ZAD2Steps.klientPrzechodziDoHistoriiZamowien()"
+});
+formatter.result({
+  "duration": 3684999336,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Awaiting check payment",
+      "offset": 44
+    }
+  ],
+  "location": "ZAD2Steps.klientPrzechodziDoSzczegolowZamowienia(String)"
+});
+formatter.result({
+  "duration": 7324946716,
+  "status": "passed"
 });
 });

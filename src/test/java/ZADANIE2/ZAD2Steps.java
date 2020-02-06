@@ -22,12 +22,14 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import static java.lang.Thread.sleep;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 import static org.openqa.selenium.Keys.*;
 
 public class ZAD2Steps {
     WebDriver driver;
     String oczekiwanyRabat = "20%";
+    String orderCut;
+    String total;
 
 
 
@@ -73,7 +75,7 @@ public class ZAD2Steps {
 
         WebElement rabat = driver.findElement(By.xpath("//*[@id='main']/div[1]/div[2]/div[1]/div[2]/div/span[2]"));
         String rabatValue = rabat.getText();
-        System.out.println("Rabat wynosi: " + rabatValue);
+        System.out.println("Rabat wynosi: " + rabatValue.substring(5));
         assertTrue(rabatValue.contains(oczekiwanyRabat));
         sleep(1000);
 
@@ -145,53 +147,74 @@ public class ZAD2Steps {
         WebElement potwierdzenie = driver.findElement(By.xpath("//h3[@class='h1 card-title']")); //YOUR ORDER IS CONFIRMED
         System.out.println("Potwierdzenie zamowienia " + potwierdzenie.getText());
         sleep(1000);
-        String actualString = driver.findElement(By.xpath("//h3[@class='h1 card-title']")).getText(); //walory dydaktyczne - dla assertu musi byc jako string a nie webelement
-        assertTrue(actualString.contains(msg));
-        System.out.println("Potwierdzenie zamowienia2 " + actualString);
+        assertTrue(potwierdzenie.getText().contains(msg));
         sleep(1000);
+
+        String orderRef = driver.findElement(By.xpath("//div[@id='order-details']/ul/li[1]")).getText(); // Order reference
+        String orderCut = orderRef.substring(17);
+        System.out.println("orderCut: " + orderCut);
+        this.orderCut = orderCut;
+        sleep(1000);
+        String total = driver.findElement(By.xpath("//div[@class='order-confirmation-table']/descendant::td[6]")).getText();
+        this.total = total;
+        System.out.println("Total: " + total);
+        sleep(2000);
 
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("/home/roman/Pobrane/ZALICZENIE/src/test/java/ZADANIE2/step12.png"));
         sleep(2000);
-
-        String orderRef = driver.findElement(By.xpath("//div[@id='order-details']/ul/li[1]")).getText(); // Order reference
-        System.out.println("Order Ref: " + orderRef);
-        String orderCut = orderRef.substring(28);
-        System.out.println("Order Ref: " + orderCut);
-        sleep(1000);
-        String total = driver.findElement(By.xpath("//div[@class='order-confirmation-table']/descendant::td[6]")).getText();
-        System.out.println("Order Ref: " + total);
-        sleep(1000);
-
-
-
-
     }
 
     @And("^klient przechodzi do konta$")
     public void klientPrzechodziDoKonta() throws InterruptedException, IOException {
         driver.findElement(By.xpath("//div[@class='user-info']/a[2]")).click(); // Idz do konta
         sleep(1000);
-        driver.findElement(By.xpath("//div[@class='links']/a[3]")).click(); //Idz do historii
         File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("/home/roman/Pobrane/ZALICZENIE/src/test/java/ZADANIE2/step13.png"));
         sleep(2000);
-        String orderRefHist = driver.findElement(By.xpath("//div[@id='order-details']/ul/li[1]")).getText(); // Order reference
-
 
     }
 
+    @And("^klient przechodzi do historii zamowien$")
+    public void klientPrzechodziDoHistoriiZamowien() throws IOException, InterruptedException {
+        driver.findElement(By.xpath("//div[@class='links']/a[3]")).click(); //Idz do historii
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("/home/roman/Pobrane/ZALICZENIE/src/test/java/ZADANIE2/step15.png"));
+        sleep(2000);
+    }
 
 
+    @Then("^klient przechodzi do szczegolow zamowienia \"([^\"]*)\"$")
+    public void klientPrzechodziDoSzczegolowZamowienia(String msg2) throws Throwable {
+        String path1 = "//div[@class='order']//descendant::h3[contains(text(), '";
+        String path3 = "')]/parent::a";
+        String path = path1 + this.orderCut + path3;
+        sleep(2000);
+
+        WebElement orderLink = driver.findElement(By.xpath(path));
+        String orderLinkText = orderLink.getAttribute("href");
+        driver.get(orderLinkText); //przechodze do strony "Order details"
+        sleep(2000);
+        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(scrFile, new File("/home/roman/Pobrane/ZALICZENIE/src/test/java/ZADANIE2/step16.png"));
+        sleep(2000);
+
+        String orderRefHist = driver.findElement(By.xpath("//div[@class='row']/descendant::strong")).getText(); // Order reference ze strony "Order details"
+        System.out.println(orderRefHist);
+        String orderRefHistCut = orderRefHist.substring(16,25);
+        assertTrue(this.orderCut.contains(orderRefHistCut));
+
+        String totalHist = driver.findElement(By.xpath("//table[@id='order-products']//child::tr[@class='text-xs-right line-total']/td[2]")).getText(); // Total ze strony "Order details"
+        System.out.println("totalHist:" + totalHist);
+        assertEquals(this.total, totalHist);
+
+        String statusOrder = driver.findElement(By.xpath("//table[@class='table table-striped table-bordered table-labeled hidden-xs-down']/descendant::span")).getText();
+        assertEquals(statusOrder, msg2);
+
+    }
 }
 
-//div[@class='order']/descendant::h3[contains(text(), 'HBCBQZFTI')]/ancestor::a  // link do zamowienia
 
-
-
-//div[@class='order']/descendant::h3[contains(text(), 'HBCBQZFTI']
-
-//[contains(text(), 'HBCBQZFTI')]
 
 
 

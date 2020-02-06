@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="406a87b0-b50b-46c9-83d2-e268085beace" name="Default Changelist" comment="2 luty 2020">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/drivers/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ZADANIE2/ZAD2Steps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ZADANIE2/ZAD2Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/zad1.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/zad1.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cucumber/Features/zad2.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cucumber/Features/zad2.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ZADANIE2/ZAD2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ZADANIE2/ZAD2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ZADANIE2/ZAD2Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ZADANIE2/ZAD2Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +60,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ZAD2Test">
+    <configuration name="testyText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testyText" />
+      <module name="ZALICZENIE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: zad2" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/Cucumber/Features/zad2.feature" />
@@ -130,6 +133,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ZAD2Test" />
+        <item itemvalue="Application.testyText" />
         <item itemvalue="JUnit.ZAD1Test" />
         <item itemvalue="Cucumber java.Feature: zad2" />
         <item itemvalue="JUnit.ZAD1test" />
@@ -187,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580683080636</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2 luty 2020">
+      <created>1580944186226</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580944186226</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,34 +218,38 @@
       <screen x="70" y="27" width="1850" height="957" />
     </state>
     <state x="453" y="163" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.957@70.27.1850.957" timestamp="1580661532419" />
+    <state x="253" y="581" width="755" height="757" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581018979318">
+      <screen x="70" y="27" width="1850" height="957" />
+    </state>
+    <state x="253" y="581" width="755" height="757" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/70.27.1850.957@70.27.1850.957" timestamp="1581018979318" />
     <state x="609" y="433" width="772" height="152" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580656205300">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
     <state x="609" y="433" width="772" height="152" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/70.27.1850.957@70.27.1850.957" timestamp="1580656205300" />
-    <state x="769" y="40" width="777" height="814" key="CommitChangelistDialog2" timestamp="1580683145858">
+    <state x="769" y="40" width="777" height="814" key="CommitChangelistDialog2" timestamp="1580944185585">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
-    <state x="769" y="40" width="777" height="814" key="CommitChangelistDialog2/70.27.1850.957@70.27.1850.957" timestamp="1580683145858" />
+    <state x="769" y="40" width="777" height="814" key="CommitChangelistDialog2/70.27.1850.957@70.27.1850.957" timestamp="1580944185585" />
     <state x="1090" y="184" width="424" height="491" key="FileChooserDialogImpl" timestamp="1580659023879">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
     <state x="1090" y="184" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.957@70.27.1850.957" timestamp="1580659023879" />
-    <state width="1804" height="324" key="GridCell.Tab.0.bottom" timestamp="1580944061745">
+    <state width="1804" height="412" key="GridCell.Tab.0.bottom" timestamp="1581019275790">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
-    <state width="1804" height="324" key="GridCell.Tab.0.bottom/70.27.1850.957@70.27.1850.957" timestamp="1580944061745" />
-    <state width="1804" height="324" key="GridCell.Tab.0.center" timestamp="1580944061745">
+    <state width="1804" height="412" key="GridCell.Tab.0.bottom/70.27.1850.957@70.27.1850.957" timestamp="1581019275790" />
+    <state width="1804" height="412" key="GridCell.Tab.0.center" timestamp="1581019275788">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
-    <state width="1804" height="324" key="GridCell.Tab.0.center/70.27.1850.957@70.27.1850.957" timestamp="1580944061745" />
-    <state width="1804" height="324" key="GridCell.Tab.0.left" timestamp="1580944061744">
+    <state width="1804" height="412" key="GridCell.Tab.0.center/70.27.1850.957@70.27.1850.957" timestamp="1581019275788" />
+    <state width="1804" height="412" key="GridCell.Tab.0.left" timestamp="1581019275787">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
-    <state width="1804" height="324" key="GridCell.Tab.0.left/70.27.1850.957@70.27.1850.957" timestamp="1580944061744" />
-    <state width="1804" height="324" key="GridCell.Tab.0.right" timestamp="1580944061745">
+    <state width="1804" height="412" key="GridCell.Tab.0.left/70.27.1850.957@70.27.1850.957" timestamp="1581019275787" />
+    <state width="1804" height="412" key="GridCell.Tab.0.right" timestamp="1581019275789">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
-    <state width="1804" height="324" key="GridCell.Tab.0.right/70.27.1850.957@70.27.1850.957" timestamp="1580944061745" />
+    <state width="1804" height="412" key="GridCell.Tab.0.right/70.27.1850.957@70.27.1850.957" timestamp="1581019275789" />
     <state x="789" y="218" width="401" height="582" key="RollbackChangesDialog" timestamp="1580760601391">
       <screen x="70" y="27" width="1850" height="957" />
     </state>
@@ -247,10 +262,11 @@
       <screen x="70" y="27" width="1850" height="957" />
     </state>
     <state x="590" y="229" width="800" height="559" key="Vcs.Push.Dialog.v2/70.27.1850.957@70.27.1850.957" timestamp="1580683084377" />
-    <state x="651" y="333" key="com.intellij.ide.util.TipDialog" timestamp="1580922952677">
-      <screen x="70" y="27" width="1850" height="957" />
+    <state x="112" y="210" key="com.intellij.ide.util.TipDialog" timestamp="1581005056052">
+      <screen x="70" y="27" width="730" height="573" />
     </state>
     <state x="651" y="333" key="com.intellij.ide.util.TipDialog/70.27.1850.957@70.27.1850.957" timestamp="1580922952677" />
+    <state x="112" y="210" key="com.intellij.ide.util.TipDialog/70.27.730.573@70.27.730.573" timestamp="1581005056052" />
     <state x="763" y="425" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580682558049">
       <screen x="70" y="27" width="1850" height="957" />
     </state>

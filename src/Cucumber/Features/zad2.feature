@@ -12,11 +12,14 @@ Feature: Zakupy2
     And klient wybierze opcje platnosci
     Then klient wykona zrzut potwierdzenia zamowienia "<msg>"
     And klient przechodzi do konta
+    And klient przechodzi do historii zamowien
+    Then klient przechodzi do szczegolow zamowienia "<msg2>"
+
 
 
     Examples:
-      |sklep                         |email         |haslo |produkt                    |rozmiar|sztuk|msg                    |
-      |https://prod-kurs.coderslab.pl|Lolek@bolek.pl|123qwe|Hummingbird printed sweater|M      |5    |YOUR ORDER IS CONFIRMED|
+      |sklep                         |email         |haslo |produkt                    |rozmiar|sztuk|msg                    |msg2                  |
+      |https://prod-kurs.coderslab.pl|Lolek@bolek.pl|123qwe|Hummingbird printed sweater|M      |5    |YOUR ORDER IS CONFIRMED|Awaiting check payment|
 
 
 
@@ -31,11 +34,11 @@ Feature: Zakupy2
 #+wybierze metodę odbioru - PrestaShop "pick up in store",
 #+wybierze opcję płatności - Pay by Check,
 #+kliknie na "order with an obligation to pay",
+#+zrobi screenshot z potwierdzeniem zamówienia i kwotą.
 
 
 
 
-#-zrobi screenshot z potwierdzeniem zamówienia i kwotą.
 
 #Dodatkowe kroki dla chętnych:
 #-Wejdź w historię zamówień i detale (najpierw kliknij w użytkownika zalogowanego, później kafelek),

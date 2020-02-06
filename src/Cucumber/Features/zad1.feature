@@ -22,7 +22,7 @@ Feature: Zakupy
 
 Examples:
 |sklep                          |email         |haslo |url2                                                       |alias|address|city     |zip   |country       |phone    |msg1                         |msg2                         |
-|https://prod-kurs.coderslab.pl|Lolek@bolek.pl|123qwe|https://prod-kurs.coderslab.pl/index.php?controller=address |Dom1  |Zytnia |Wloclawek|87-800|United Kingdom|654321789|Address successfully added!|Address successfully deleted!|
+|https://prod-kurs.coderslab.pl|Lolek@bolek.pl|123qwe|https://prod-kurs.coderslab.pl/index.php?controller=address |Dom2  |Zytnia |Wloclawek|87-800|United Kingdom|654321789|Address successfully added!|Address successfully deleted!|
 
 
 
